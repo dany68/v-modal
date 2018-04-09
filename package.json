@@ -1,0 +1,11 @@
+{
+    "name": "v-modal",
+    "version": "0.0.0",
+    "description": "A modal component for Vue.js 2",
+    "main": "src/index.js",
+    "keywords": [
+        "modal"
+    ],
+    "author": "Daniel Elmalem <delmalem697@gmail.com>",
+    "private": true
+}

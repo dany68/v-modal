@@ -1,0 +1,12 @@
+# Files
+npm-debug.log
+
+# Folders
+node_modules
+
+# OS or Editor folders
+._*
+.cache
+.DS_Store
+.idea
+Thumbs.db
