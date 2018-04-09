@@ -45,7 +45,7 @@ Now you can use html like this to render the modal:
 ```html
 <button @click="showModal = true">Open Modal<button>
 
-<v-modal :show="showModal" @close="showModal = false">
+<v-modal :show="showModal" @close="showModal = false" type="window">
     <div class="modal-card">
         Your content goes here !
     </div>
