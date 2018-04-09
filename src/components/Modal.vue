@@ -1,11 +1,11 @@
 <template lang="html">
-    <div v-if="show" class="modal" :class="type ? `modal-${type}` : ''">
+    <div v-if="show" class="modal">
         <div class="modal-overlay" @click="close"></div>
 
-        <div class="modal-container">
+        <div class="modal-container" :class="type ? `modal-${type}` : ''">
             <slot></slot>
 
-            <div class="modal-close-btn" @click="close"></div>
+            <div class="modal-close-btn" @click="close" title="Close" role="button"></div>
         </div>
     </div>
 </template>
@@ -23,7 +23,7 @@ export default {
         },
 
         /**
-         * Will append a class '.modal-{type}' on the .modal.
+         * Will append a class '.modal-{type}' on the .modal-container.
          */
         type: {
             type: String,

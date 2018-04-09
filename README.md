@@ -57,8 +57,8 @@ Now you can use html like this to render the modal:
 | Prop     | Type    | Default | Required | Description                                                                                                       |
 | -------- | ------- | ------- | -------- | ----------------------------------------------------------------------------------------------------------------- |
 | show     | Boolean | false   | No       | Determine if the modal is displayed.                                                                              |
-| type     | String  |         | No       | Add a .modal-{variant} class to the modal                                                                         |
-| closable | Boolean | true    | No       | Determine if a click on the overlay should close the modal, and if a close button should be added to the template |
+| type     | String  |         | No       | Add a .modal-{variant} class to the modal container.                                                                         |
+| closable | Boolean | true    | No       | Determine if a click on the overlay should close the modal, and if a close button should be added to the template. |
 
 
 ### Events
