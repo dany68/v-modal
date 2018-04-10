@@ -2,9 +2,9 @@
     <div v-if="show" class="modal" :class="type ? `modal-${type}` : ''" @click="close">
         <div class="modal-container">
             <slot></slot>
-
-            <div class="modal-close-btn" @click="close" title="Close" role="button"></div>
         </div>
+
+        <div v-if="closable" class="modal-close-btn" @click="close" title="Close" role="button"></div>
     </div>
 </template>
 
