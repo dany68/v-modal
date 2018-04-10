@@ -1,8 +1,6 @@
 <template lang="html">
-    <div v-if="show" class="modal">
-        <div class="modal-overlay" @click="close"></div>
-
-        <div class="modal-container" :class="type ? `modal-${type}` : ''">
+    <div v-if="show" class="modal" :class="type ? `modal-${type}` : ''" @click="close">
+        <div class="modal-container">
             <slot></slot>
 
             <div class="modal-close-btn" @click="close" title="Close" role="button"></div>
@@ -63,7 +61,7 @@ export default {
          * Close the modal and emit a `close` event.
          */
         close(e) {
-            if (e.target === e.currentTarget) {
+            if (this.closable && e.target === e.currentTarget) {
                 this.$emit('close');
                 this.$emit('input', false);
             }

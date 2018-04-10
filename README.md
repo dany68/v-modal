@@ -45,10 +45,8 @@ Now you can use html like this to render the modal:
 ```html
 <button @click="showModal = true">Open Modal<button>
 
-<v-modal :show="showModal" @close="showModal = false" type="window">
-    <div class="modal-card">
-        Your content goes here !
-    </div>
+<v-modal type="panel" :show="showModal" @close="showModal = false">
+    <!-- Your content goes here -->
 </v-modal>
 ```
 
@@ -57,7 +55,7 @@ Now you can use html like this to render the modal:
 | Prop     | Type    | Default | Required | Description                                                                                                       |
 | -------- | ------- | ------- | -------- | ----------------------------------------------------------------------------------------------------------------- |
 | show     | Boolean | false   | No       | Determine if the modal is displayed.                                                                              |
-| type     | String  |         | No       | Add a .modal-{variant} class to the modal container.                                                                         |
+| type     | String  |         | No       | Add a .modal-{type} class to the .modal div. Useful to create multiples modal themes. |
 | closable | Boolean | true    | No       | Determine if a click on the overlay should close the modal, and if a close button should be added to the template. |
 
 
