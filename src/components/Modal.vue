@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
     <div v-if="show" class="modal" :class="type ? `modal-${type}` : ''" @click="close">
         <div class="modal-container">
             <slot></slot>
