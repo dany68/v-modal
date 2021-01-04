@@ -46,7 +46,9 @@ Now you can use html like this to render the modal:
 <button @click="showModal = true">Open Modal<button>
 
 <v-modal type="panel" :show="showModal" @close="showModal = false">
-    <!-- Your content goes here -->
+    <div class="modal-container">
+        <!-- Your content goes here -->
+    </div>
 </v-modal>
 ```
 
